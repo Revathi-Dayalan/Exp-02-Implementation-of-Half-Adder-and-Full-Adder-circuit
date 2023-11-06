@@ -1,4 +1,4 @@
-![265629708-17b7b349-8cf3-4da8-91e7-6650fd7e733e](https://github.com/Revathi-Dayalan/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/96000574/8d46dfbe-3f75-4b30-8e12-df91c58324e4)# Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
+### Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
 
 # Implementation-of-Half-Adder-and-Full-Adder-circuit
 ### AIM:
