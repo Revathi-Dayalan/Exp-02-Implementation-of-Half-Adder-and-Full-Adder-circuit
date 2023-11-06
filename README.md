@@ -1,4 +1,4 @@
-# Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
+![265629708-17b7b349-8cf3-4da8-91e7-6650fd7e733e](https://github.com/Revathi-Dayalan/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/96000574/8d46dfbe-3f75-4b30-8e12-df91c58324e4)# Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
 
 # Implementation-of-Half-Adder-and-Full-Adder-circuit
 ### AIM:
@@ -32,23 +32,67 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 ### Procedure
 
 Connect the supply (+5V) to the circuit
+
 Switch ON the main switch
+
 If the output is 1, then the led glows.
+
 ### 
 Program:
-/*
+```
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
-Logic symbol & Truthtable
-RTL realization
+Developed by: REVATHI D
+RegisterNumber:  212221240045
+```
+```
+1. Program to design a half adder:
 
-### Output:
-### RTL
-### TIMING DIAGRAM
+module ex3(a,b,sum,carry);
+input a,b;
+output sum,carry;
+assign sum=a^b;
+assign carry=a&b;
+endmodule 
+
+2. Program to design a full adder:
+
+module ex31(a,b,cin,sum,carry);
+input a,b,cin;
+output sum,carry;
+assign sum=a^b^cin;
+assign carry=(a&b)|((a^b)&cin);
+endmodule
+```
+## TRUTH TABLE 
+## half adder:
+
+![265629380-f8a33cf4-faec-4a3a-9a45-ba14ae1b5bda](https://github.com/Revathi-Dayalan/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/96000574/bc239ee2-ba16-42e8-b2e3-713194fe5c41)
+
+## full adder:
+
+![265629428-abf97517-ea99-40f1-affd-438e68f6cadb](https://github.com/Revathi-Dayalan/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/96000574/212b968b-12fd-4f4e-bd15-e634366874a3)
+
+## RTL realization
+## half adder:
+
+![265629708-17b7b349-8cf3-4da8-91e7-6650fd7e733e](https://github.com/Revathi-Dayalan/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/96000574/258f4893-0416-4850-bcc2-29f14663d885)
+
+## full adder:
+
+![265629789-884932e9-6396-4dc5-ad8b-e1d0ef690b61](https://github.com/Revathi-Dayalan/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/96000574/a451bdbd-6d11-41da-8d97-d9c4caf4829c)
+
+## Output waveform:
+## half adder:
+
+![265629888-a204ccf6-66f1-43d4-ae24-b980509a1acc](https://github.com/Revathi-Dayalan/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/96000574/d1888fd2-efff-4a81-a563-fe7488b25c3e)
 
 
-### TRUTH TABLE 
+## full adder:
+
+
+![265629963-b5c9748a-da88-428a-9fda-90b04a98d9d0](https://github.com/Revathi-Dayalan/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/96000574/aaf8b5dc-28c6-4dcf-b2bc-3e018770def6)
+
 
 ### Result:
+
+Thus the half adder and full adder circuit are designed and the truth table for half adder and full adder are verified.
